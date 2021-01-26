@@ -18,7 +18,8 @@ namespace MyBlog_V1._0.Models
         public string Title { get; set; }
         [DisplayName("Author")]
         public string Author { get; set; }
-        [ForeignKey("IdentityModels")]
+        //Need to connect block table to specific application user via Id
+        [ForeignKey("Application")]
         public ApplicationUser ApplicationUserId { get; set; }
     }
 }
